@@ -1,0 +1,46 @@
+ <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<div class='div1'>
+<h3>Update Task</h3>
+{% load static %}
+
+<form method='POST' action="">  
+    {% csrf_token %}
+    {{form}}
+    <input  class="btn btn-primary" id="a1" type='submit' name='update task'>
+
+</form>
+</div>
+
+<style>
+  
+    #a1{
+    
+      
+        margin-left:150px;
+       
+    }
+        
+    .div1{
+        width:600px;
+        margin:20px auto;
+        padding:20px;
+        background-color:#fff;
+        border-radius:3px;
+        box-shadow:6px 2px 3px opx rgba(0,0,0,0,75);
+    }
+    
+    h3{
+        color:#000000;
+        margin-top:30px;
+        padding:0px 0px 45px 90px;
+    }
+    body{
+        background-color:#222c2d;
+    }
+    
+    
+    
+    
+    </style>

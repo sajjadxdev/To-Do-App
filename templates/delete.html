@@ -1,0 +1,51 @@
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+<div class='div1'>
+<p>Are you sure want to delete "{{item}}"?</p>
+
+<a class="btn btn-danger" id="a2" href='{% url 'list' %}'>Cancel</a>
+
+<form method="POST" action="" class='ok'> 
+    {% csrf_token %}
+    <input class="btn btn-primary" id="a1"type='submit' name='confirm'>
+
+
+</form>
+</div>
+<style>
+#a2{
+    margin-top:24px;
+    margin-bottom:-40px;
+    margin-left:303px;
+}
+#a1{
+
+  
+    margin-left:200px;
+   
+}
+    
+.div1{
+    width:600px;
+    margin:20px auto;
+    padding:20px;
+    background-color:#fff;
+    border-radius:3px;
+    box-shadow:6px 2px 3px opx rgba(0,0,0,0,75);
+}
+
+p{
+    color:#000000;
+    margin-top:50px;
+    padding:0px 0px 10px;
+}
+body{
+    background-color:#222c2d;
+}
+
+
+
+
+</style>

@@ -1,0 +1,32 @@
+
+body{
+    background-color:#222c2d;
+}
+
+input{
+    width:100%;
+    padding:12px 20px;
+    margin:8px 0px;
+    box-sizing:border-box;
+}
+input::placeholder{
+    color:#89afb6;
+}
+.submit{
+    background-color:#6BA3E8;
+}
+.center-column{
+    width:600px;
+    margin:20px auto;
+    padding:20px;
+    background-color:#fff;
+    border-radius:3px;
+    box-shadow:6px 2px 3px opx rgba(0,0,0,0,75);
+}
+
+
+.btn-danger{
+    background-color:#ffae19;
+    border-color:#e59400;
+}
+
